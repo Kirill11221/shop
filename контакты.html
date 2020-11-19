@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        input:valid + span:after {
+         content: url(images/ok.png); 
+         padding-left: 5px;
+        }
+        input:invalid + span:after {
+         content: url(images/nook.png);
+         padding-left: 5px;
+        }
+        input[type="number"] {
+         margin-right: -3px;
+        }
+       </style>
+</head>
+<body>
+    <header>
+        <h2>Напишите нам</h2>
+        <nav>
+            <ul>                
+                    <li><a href="index.html">Контакты</a></li>
+                    <li><a href="каталог.html">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="handler.php" >
+        <p>Пожалуйста, заполните обязательные поля.</p>
+        <p>Имя: <input type="text" required><span></span></p>
+        <p>Возраст: <input type="number" size="3"><span></span></p>
+        <p>E-mail: <input type="email" required><span></span></p>
+        <p>Сайт: <input type="url"><span></span></p>
+        <p><input type="submit" value="Отправить"></p>
+       </form>
+    <hr/>
+    
+    <footer>
+        все права защищены &copy;
+    </footer> 
+</body>
+</html>

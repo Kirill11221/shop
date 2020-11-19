@@ -1,0 +1,67 @@
+
+nav{
+    color: slateblue;
+    font-size: medium;
+    font-style: italic;
+}
+li{
+    list-style-type: none;
+}
+:link{
+    color:green;
+}
+
+* {box-sizing: border-box; margin: 0;}
+.widget {
+  padding: 20px 30px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+.widget{
+  background-color: #db2923;
+  
+}
+
+.widget-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  border-left: 2px solid #b99d61;
+}
+.widget-list {
+  padding: 0;
+  list-style: none;
+}
+.widget-list a:before {
+  content: "\2014";
+  margin-right: 14px;
+}
+.widget-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0; 
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #ffffff;
+  transition: .3s linear;
+}
+.widget-list a:hover {color: #000000;}
+
+html, body {
+  height: 100%;
+  margin: 0;
+ }
+ .wrapper {
+  min-height: 100%;
+  /* Равно высоте подвала, */
+  /* но с учётом margin-bottom у последнего дочернего элемента */
+  margin-bottom: -50px;
+ }
+ .footer,
+ .push {
+  height: 50px;
+ }
